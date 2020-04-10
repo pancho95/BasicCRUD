@@ -1,0 +1,48 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Movizen Bootstrap</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script type="text/javascript" src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <div class="container bg-primary">
+
+      <div class="row text-white ct1">
+        <div class="col">Especie</div>
+        <div class="col">Cantidad</div>
+        <div class="col">Precio($)</div>
+        <div class="col">Total($)</div>
+      </div>
+
+      <div class="row ct2">
+        <input class="col" type="text" id="especie" placeholder="Especie">
+        <input class="col"type="text" id="cant" placeholder="Cantidad">
+        <input class="col" type="text" id="compra" placeholder="Precio compra">
+        <input class="col" type="text" id="subtotal" placeholder="Total" disabled>
+        <input type="button" class="btn btn-success" placeholder="Total" onclick="suma()" id="sum" value="+" />
+      </div>
+
+      <p class="parrafo invisible">Su cartera contiene los siguientes elementos:</p>
+
+      <div class="row cuadro invisible">
+        <p class='col-3'>Especie</p>
+        <p class='col-2'>Cantidad</p>
+        <p class='col-2'>Precio($)</p>
+        <p class='col-3'>Total($)</p>
+        <p class='col-2'>Acción</p>
+      </div>
+
+      <div class="cuadro2"></div>
+
+    </div>
+
+  </body>
+</html>
